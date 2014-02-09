@@ -84,14 +84,27 @@ body {
 }
 
 /* Center align the text within the three columns below the carousel */
-.marketing .col-sm-6 {
+.marketing .col-xl-6 {
   text-align: center;
   margin-bottom: 20px;
+}
+.marketing .col-xl-7 {
+  text-align: center;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+.marketing .col-xl-5 {
+  text-align: center;
+  margin-bottom: 20px;
+  padding-top: 170px;
+  padding-bottom: 240px;
+  font-family:"Times New Roman", Georgia, serif;
+  font-color: 0000;
 }
 .marketing h2 {
   font-weight: normal;
 }
-.marketing .col-sm-6 p {
+.marketing .col-xl-6 p {
   text-align: center;
   margin-left: 10px;
   margin-right: 10px;
@@ -162,3 +175,34 @@ body {
     margin-top: 120px;
   }
 }
+
+.flex-video {
+  position: relative;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  height: 0;
+  margin-bottom: 1px;
+  overflow: hidden;
+}
+ 
+.flex-video.widescreen { padding-bottom: 57.25%; }
+.flex-video.vimeo { padding-top: 0; }
+ 
+.flex-video iframe,
+.flex-video object,
+.flex-video embed {
+  text-align: center;
+  top: 0;
+  left: 0;
+  width: 75%;
+  height: 75%;
+}
+@media only screen and (max-device-width: 800px), only screen and (device-width: 1024px) and (device-height: 600px), only screen and (width: 1280px) and (orientation: landscape), only screen and (device-width: 800px), only screen and (max-width: 767px) {
+  .flex-video { padding-top: 0; }
+}
+.dropdown-menu a {
+  white-space: normal;
+}
+.dropdown-menu > li{position:relative;}
+
+.dropdown-menu > li > i{position:absolute;left:0;top:3px;}
